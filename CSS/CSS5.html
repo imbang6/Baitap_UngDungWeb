@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .banner {
+        font-size: 2.5em;
+        font-weight: bold;
+        text-shadow: #1b1b1b 3px 3px 3px;
+        background-color: red;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        animation: change_background 5s infinite;
+      }
+      @keyframes change_background {
+        25% {
+          background-color: orange;
+          font-size: 1em;
+        }
+        35% {
+          background-color: yellow;
+          font-size: 1.3em;
+        }
+        45% {
+          background-color: greenyellow;
+          font-size: 1.5em;
+        }
+        65% {
+          background-color: cyan;
+          font-size: 1.7em;
+        }
+        85% {
+          background-color: violet;
+          font-size: 1.9em;
+        }
+        100% {
+          background-color: pink;
+          font-size: 2.2em;
+        }
+      }
+
+      .frame p {
+        float: left;
+        font-size: 3em;
+        color: yellow;
+        width: 450px;
+        height: 450 px;
+        background-color: aqua;
+        margin: 30px;
+        text-align: center;
+        line-height: 500px;
+      }
+      .so1 {
+        border: 5px solid red;
+        background-color: aqua;
+        width: 200px;
+        animation: thaydoi 8s infinite;
+      }
+      @keyframes thaydoi {
+        0% {
+          background-image: url(gorgeous.jpg);
+        }
+        20% {
+          background-image: url(gorgeous2.jpg);
+        }
+        40% {
+          background-image: url(gorgeous3.jpg);
+        }
+        60% {
+          background-image: url(gorgeous4.jpg);
+        }
+        80% {
+          background-image: url(gorgeous5.jpg);
+        }
+        100% {
+          background-image: url(gorgeous6.jpg);
+        }
+      }
+      .so2 {
+        border: 5px dashed rgb(255, 0, 234);
+        border-radius: 0 30px;
+      }
+      .so3 {
+        border: 5px dotted rgb(130, 181, 12);
+        border-radius: 30px 0px;
+      }
+      .so4 {
+        border: 5px solid red;
+        animation: xoayTron 5s infinite;
+      }
+
+      @keyframes xoayTron {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(120deg);
+        }
+        40% {
+          transform: rotate(180deg);
+        }
+        60% {
+          transform: rotate(240deg);
+        }
+        80% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(480deg);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="banner">BANNER</p>
+    <div class="frame">
+      <p class="so1">1</p>
+      <p class="so2">2</p>
+      <p class="so3">3</p>
+      <p class="so4">Rotate</p>
+    </div>
+  </body>
+</html>

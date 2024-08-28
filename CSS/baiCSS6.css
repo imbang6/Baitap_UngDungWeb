@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .main {
+    display: block;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .banner h1 {
+    text-align: center;
+    text-shadow: 5px 5px 3px gray;
+    color: blue;
+    font-size: 2.5em;
+  }
+  
+  .nav {
+    text-align: left;
+    height: 30px;
+    background-color: rgb(56, 181, 222);
+    line-height: 30px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .nav li {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    padding-left: 5px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav a:hover {
+    color: yellow;
+    font-size: large;
+  }
+  
+  .content {
+    height: 270px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+  }
+  
+  .topleft {
+    width: 70%;
+  }
+  
+  .topleft h1 {
+    color: darkslategray;
+    padding-bottom: 5px;
+  }
+  
+  .topleft p {
+    /* padding-top: 8px; */
+    line-height: 30px;
+    /* padding-bottom: 8px; */
+  }
+  
+  .topright {
+    width: 30%;
+    background-image: url(/Images/coffee.png);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+  }
+  
+  .bottom button {
+    background-color: rgb(62, 150, 238);
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .bottom button:hover {
+    color: yellow;
+    background-color: rgb(66, 233, 239);
+  }
+  
+  .bottom h1 {
+    color: darkslategray;
+    padding-bottom: 5px;
+  }
+  

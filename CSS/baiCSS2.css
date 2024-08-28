@@ -1,0 +1,20 @@
+.shadow {
+    text-shadow: 7px 4px 1px rgb(190, 188, 188);
+  }
+  .capitalize {
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .uppercase {
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .pageOne::first-letter {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+  }
+  .pageOne {
+    font-weight: 700;
+  }
+  

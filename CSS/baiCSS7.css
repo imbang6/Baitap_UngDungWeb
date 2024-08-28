@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner {
+  background-color: aquamarine;
+  background-repeat: repeat-x;
+  height: 10%;
+  color: yellow;
+  text-shadow: red 5px 5px 5px;
+  line-height: 100px;
+}
+
+.nav {
+  height: 30px;
+  background-color: darkcyan;
+  line-height: 30px;
+}
+
+.container {
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 15%;
+  background-color: aqua;
+}
+
+.left > div {
+  background-color: blue;
+  font-weight: bold;
+  font-size: larger;
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+.left > div > ul {
+  padding: 10px;
+  background-color: cyan;
+  font-weight: lighter;
+  font-size: medium;
+  text-align: left;
+  color: black;
+}
+
+.right {
+  width: 15%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.right > div {
+  width: 70%;
+  border: red 3px solid;
+  border-radius: 20px;
+  transform: skew(5deg, -5deg);
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: darkred 3px 3px;
+}
+
+.right :first-child {
+  background-color: aqua;
+  color: rgb(5, 13, 19);
+  font-weight: bold;
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content > div {
+  display: flex;
+  flex-direction: row;
+  height: 45%;
+  margin: 20px;
+}
+
+.content > div > div {
+  width: 50%;
+  border: black 3px solid;
+  border-radius: 30px 0px 0px 0px;
+  margin: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  overflow: scroll;
+}
+
+.footer {
+  height: 10%;
+  background-color: blue;
+  color: yellow;
+  line-height: 50px;
+}
+
+.menu {
+  background-color: darkcyan;
+}
+
+.menu a {
+  text-decoration: none;
+  display: block;
+  color: aliceblue;
+}
+
+.menu a:hover {
+  background-color: lightskyblue;
+}
+
+.menu li {
+  display: inline-block;
+  width: 120px;
+  position: relative;
+}
+
+.menu li .submenu {
+  display: none;
+  position: absolute;
+}
+
+.menu li:hover .submenu {
+  display: block;
+  background-color: darkcyan;
+}

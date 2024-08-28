@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        color: #000000;
+        background-color: #ffffff;
+        font-size: 12px;
+        font-family: arial, verdana, sans-serif;
+      }
+      p {
+        padding: 10px;
+      }
+      p[id] {
+        border: 1px solid #000000;
+      }
+      p[id="summary"] {
+        background-color: #ffff00;
+      }
+      p[class~="XHTML"] {
+        border: 5px solid #000000;
+      }
+      p[language|="en"] {
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+      }
+      p[class^="b"] {
+        border: 3px solid #333333;
+        color: #ff00ff;
+      }
+      p[class$="x"] {
+        border: 1px solid #333333;
+        color: #ff0000;
+      }
+      p[class*="in"] {
+        background-color: #00ffff;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="introduction">
+      Đoạn văn bản này có thuộc tính id = &quot;introduction&quot;
+    </p>
+    <p id="summary">Đoạn văn bản này có thuộc tính id = &quot;summary&quot;</p>
+    <p class="important XHTML">
+      Đoạn văn bản này có thuộc tính class = &quot;important XHTML&quot;
+    </p>
+    <p language="en-us">
+      Đoạn văn bản này có thuộc tính language = &quot;enus&quot;
+    </p>
+    <p class="begins">
+      Đoạn văn bản này có thuộc tính class = &quot;begins&quot;
+    </p>
+    <p class="contains">
+      Đoạn văn bản này có thuộc tính class = &quot;contains&quot;
+    </p>
+    <p class="suffix">
+      Đoạn văn bản này có thuộc tính class = &quot;suffix&quot;
+    </p>
+  </body>
+</html>
