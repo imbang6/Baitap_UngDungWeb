@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <h3 align="center">BÀI KIỂM TRA CHƯƠNG 2</h3>
+    <p align="center">
+        <b>Môn học:</b> <i>Ứng dụng web</i>
+        <br>
+        <b>Mã số sinh viên:</b> <i>12345</i>
+        <br>
+        <b>Họ và tên:</b> <i>Nguyễn Văn A</i>
+    </p>
+    <hr color="blue">
+    <p>
+        <div style="text-align: center;">
+            <div style="display: inline-block;">
+                <a href="index1.html">Trang chủ</a>
+                <a href="content.html"> Nội dung môn học</a>
+                <a href="register.html">Đăng ký</a>
+
+            </div>
+    </p>
+
+    <h3>ĐĂNG KÝ THAM GIA DIỄN ĐÀN</h3>
+    <form>
+    <table border="1px" cellpadding="10px" cellspacing="5px" width="100%">
+    <caption>
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Tên đăng nhập:</th>
+            <th width="50%" align="left">
+                <input type="text" required>
+            </th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Mật khẩu:</th>
+            <th width="50%" align="left">
+                <input type="text" required>
+            </th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Giới tính:</th>
+            <th width="50%" align="left">
+                <form>
+                    <input type="radio" name="GT" value="Nam" checked> Nam
+                    <input type="radio" name="GT" value="Nam"> Nữ
+                </form>
+            </th>
+        </tr>
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Ngày sinh:</th>
+            <th width="50%" align="left">
+                <input type="date" required>
+            </th>
+        </tr>
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Email:</th>
+            <th width="50%" align="left">
+                    <input type="text" required >
+                
+            </th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Ngôn ngữ lập trình yêu thích nhất:</th>
+            <th width="50%" align="left">
+                <form action="" method="post">
+                    <select name="NNLT">
+                        <option value="PHP">PHP</option>
+                        <option value="C++" selected>C++</option>
+                        <option value="JavaScirpt">JavaScirpt</option>
+                    </select>
+                </form>
+            </th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <th width="50%" align="left">Quy định tham gia diễn đàn:</th>
+            <th width="50%" align="left">
+                <form action="">
+                    <textarea rows="5" cols="50"> Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm</textarea>
+                </form>
+            </th>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <th width="50%" align="left"></th>
+            <th width="50%" align="left">
+                <form>
+                    <button type="submit"> Đăng ký </button>
+                    <button type="reset"> Hủy </button>
+                </form>
+            </th>
+        </tr>
+    </caption>
+        
+    </table>
+</form>
+</body>
+</html>
