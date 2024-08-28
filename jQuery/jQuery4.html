@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập jQuery 04</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("div div").click(function() {
+                // Lấy giá trị của thuộc tính background-color
+                var c = $(this).css("background-color");
+                // console.log(c);
+                var name;
+                switch (c) {
+                    case "rgb(255, 0, 0)": name = "Đỏ"; break;
+                    case "rgb(0, 0, 255)": name = "Xanh dương"; break;
+                    case "rgb(0, 255, 0)": name = "Xanh lá"; break;
+                    case "rgb(255, 255, 255)": name = "Tím"; break;
+                }
+
+                // Hiển thị chuỗi kết quả
+                $("#result").html("Màu bạn chọn là: " + name);
+                // Áp dụng màu chữ, font chữ cho div có id='result'
+                $("#result").css({'color': c, 'font-weight': 'bold'});
+                // Áp dụng màu nền cho p id='frame'
+                $("#frame").css("background-color", c);
+            });
+        });
+    </script>
+
+    <style>
+
+    div div{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        float: left;
+    }
+    #result{
+        clear: left;
+        height: 500px;
+        height: 30px;
+    }
+    #frame{
+        width: 300px;
+        height: 200px;
+        border: 5px solid gray;
+    }
+    </style>
+</head>
+
+<body>
+    <p>Click len cac hinh vupng</p>
+    <div>
+        <div style="background-color: #00f;"></div>
+        <div style="background-color: #f00;"></div>
+        <div style="background-color: #f0f;"></div>
+        <div style="background-color: #0f0;"></div>
+    </div>
+    <br>
+    <div id="result"></div>
+    <p id="frame"></p>
+</body>
+</html>
